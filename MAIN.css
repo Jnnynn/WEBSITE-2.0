@@ -1,0 +1,57 @@
+*
+body {
+    background-image: url('MAIN-BG.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 0.6fr 3fr 0.5fr;
+    grid-template-areas: 
+    "head head srch" 
+    "submenu cont ads" 
+    "footer footer footer";
+    width: 100v;
+    
+}
+
+.main > div {
+    padding: 3px;
+    margin: 3px;
+    border-radius: 3px;
+}
+
+.srch{
+    grid-area: srch;
+
+}
+
+.srchbttn {
+    margin-right: 100%;
+}
+
+.head {
+    grid-area: head;
+}
+
+.submenu {
+    background-color: rgba(82, 136, 236, 0.5);
+    grid-area: submenu;
+}
+
+.cont {
+    grid-area: cont;
+}
+
+.ads {
+    background-repeat: no-repeat;
+    grid-area: ads;
+}
+
+.footer {
+    grid-area: footer;
+    justify-items: center;
+    padding:10px;
+}
